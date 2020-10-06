@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Stars</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav>
+    <div class="menu-icon"><span class="fa fa-bars"></span></div>
+    <div class="logo"><a href="index.html">Home Stars</a></div>
+    <div class="nav-items">
+      <li><a href="review.html">Write A Review</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="browse.html">Browse Categories</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="contact_us.html">Contact Us</a></li>
+    </div>
+    <div class="search-icon"><span class="fa fa-search"></span></div>
+    <div class="cancel-icon"><span class="fa fa-close"></span></div>
+    <form action="#">
+      <input type="search" class="search-data" placeholder="What Services You Need?" required>
+      <button type="submit" class="fa fa-search" ></button>
+    </form>
+  </nav>
+  
+  <div class="home-text">
+    <h1>Get matched with local pros for your next home project.</h1>
+    <h2 style="padding:20px; font-weight: bolder; font-size: large;">Quickly get quotes from verified and reviewed pros.</h2>
+  </div>
+
+  <footer class="footer">
+    <div class="l-footer">
+      <h1><img src="homestars.jpg" alt=""></h1>
+    </div>
+    <ul class="r-footer">
+      <li>
+        <h2>Social</h2>
+          <ul class="box">
+            <li><a href="https://www.facebook.com/HomeStars/">Facebook</a></li>
+            <li><a href="https://twitter.com/homestars">Twitter</a></li>
+            <li><a href="https://www.pinterest.ca/homestarsphotos/">Pinterest</a></li>
+            <li><a href="https://www.instagram.com/homestars/">Instagram</a></li>
+          </ul>
+      </li>
+      <li class="features">
+        <h2>Homeowners</h2>
+          <ul class="box h-box">
+            <li><a href="browse.html">Browse Categories</a></li>
+            <li><a href="#">Browse Tasks</a></li>
+            <li><a href="review.html">Write A Review</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Star Reviewers</a></li>
+            <li><a href="#">Homeowner FAQ</a></li>
+            <li><a href="#">Reviewer Guidelines</a></li>
+            <li><a href="#">Homeowner Trust</a></li>
+            <li><a href="#">Cost Guides</a></li>
+            <li><a href="#">Reno Report</a></li>
+          </ul>
+      </li>
+      <li>
+        <h2>Home Professionals</h2>
+          <ul class="box">
+            <li><a href="#">Join HomeStars</a></li>
+            <li><a href="#">Brand Builder</a></li>
+            <li><a href="#">Home Professional FAQ</a></li>
+            <li><a href="#">Building Trust</a></li>
+            <li><a href="#">Mobile App</a></li>
+            <li><a href="#">Home Professional Terms</a></li>
+            <li><a href="#">Pro Centre</a></li>
+          </ul>
+      </li>
+    </ul>
+
+    <div class="b-footer">
+      <p>Muhammad Furqan 17k-3836 </p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = () => {
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = () => {
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      cancelBtn.style.color = "#ff3d00";
+      form.classList.remove("active");
+    }
+    searchBtn.onclick = () => {
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+  </script>
+</body>
+</html>
