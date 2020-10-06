@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+   <head>
+      <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+         <link rel="stylesheet" href="contact_us.css">
+         
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body> 
+      <nav>
+         <div class="menu-icon"><span class="fa fa-bars"></span></div>
+         <div class="logo"><a href="index.html">Home Stars</a></div>
+         <div class="nav-items">
+           <li><a href="review.html">Write A Review</a></li>
+           <li><a href="#">Blog</a></li>
+           <li><a href="browse.html">Browse Categories</a></li>
+           <li><a href="login.html">Login</a></li>
+         </div>
+         <div class="search-icon"><span class="fa fa-search"></span></div>
+         <div class="cancel-icon"><span class="fa fa-close"></span></div>
+       </nav>
+
+       <html lang="er" dir= "ltr">
+         <head>
+             <meta charset="utf-8">
+             <title>Contact Us</title>
+             <link rel= "stylesheet" href = "ContactStyle.css">
+     
+         </head>
+         <body>
+             <div class = "contact-form">
+                 <h1>Contact Us</h1>
+                 <p><em>Get in touch with us anytime, we're always here to help!</em></p>
+                 <p>Contact: 1-877-488-0312</p>
+                 <div class ="txtb">
+                     <label>Full Name</label>
+                     <input type="text" name = "" value="" placeholder = "Enter Your Name">
+                 </div>
+                 <div class ="txtb">
+                     <label>Email</label>
+                     <input type="text" name = "" value="" placeholder = "Enter Your Email">
+                 </div>
+                 <div class ="txtb">
+                     <label>Phone Number</label>
+                     <input type="text" name = "" value="" placeholder = "Enter Your Phone Number">
+                 </div>
+                 <div class ="txtb">
+                     <label>Message</label>
+                     <textarea></textarea>
+                 </div>
+                 <a class="btn">Send</a>
+                 <p><em>Our team is available Monday - Friday from 9 am to 5 pm EST</em></p>
+             </div>
+         </body>
+     </html>
+
+      <script>
+         const loginBtn = document.querySelector("label.login");
+         const signupBtn = document.querySelector("label.signup");
+         const signupLink = document.querySelector(".signup-link a");
+         const loginText = document.querySelector(".title-text .login");
+         const signupText = document.querySelector(".title-text .signup");
+ 
+         signupBtn.onclick = (() => {
+             loginText.style.marginLeft = "-50%";
+         });
+ 
+         loginBtn.onclick = (() => {
+             loginText.style.marginLeft = "0%";
+         })
+ 
+         signupLink.onclick = (() => {
+             signupBtn.click();
+             return false;
+         })
+ 
+     </script>
+   </body>
+</html>
